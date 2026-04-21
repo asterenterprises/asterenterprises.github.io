@@ -1,11 +1,11 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
+    <meta name="keywords" content="Aster Enterprises, software development, Jacksonville, Florida, LLC, accessibility, government vendor">
+    <meta name="description" content="Aster Enterprises, LLC is a Florida-based software company founded in 2014. We build accessible, elegant digital products for public and private institutions.">
     <link rel="shortcut icon" type="image/png" href="favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="google-site-verification" content="VhOUPnLBlM9cuX4CL5hCqIIUilY1X2VPYFlG-0-NZa4" />
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
     <link rel="stylesheet" id="ppstyle" type="text/css" href="style.css">
@@ -13,8 +13,58 @@
     <script src="./js/jquery-2.1.0.min.js"></script>
     <script src="./js/bootstrap.js"></script>
     <script src="./js/blocs.js"></script>
-
-    <title></title>
+    <style>
+      body { font-size: 16px; line-height: 1.6; }
+      p, li { font-size: 16px; line-height: 1.6; }
+      #hero-bloc .panel-body p.text-w-lg, #hero-bloc .panel-body p { font-size: 18px; line-height: 1.6; color: #3d4856; font-weight: 400; }
+      .client-grid .client-cell { height: 110px; display: flex; align-items: center; justify-content: center; padding: 10px 15px; }
+      .client-grid .client-cell img { max-height: 70px; max-width: 100%; width: auto; margin: 0 auto; filter: grayscale(100%); opacity: 0.75; transition: filter .2s ease, opacity .2s ease; }
+      .client-grid .client-cell img:hover { filter: grayscale(0); opacity: 1; }
+      @media (max-width: 767px) { .client-grid .client-cell { height: 90px; } .client-grid .client-cell img { max-height: 55px; } }
+      .est-stamp { display: inline-block; padding: 10px 18px; border: 2px solid #1a2540; border-radius: 4px; color: #fff; text-transform: uppercase; letter-spacing: 3px; font-size: 12px; font-weight: 700; margin-top: 20px; background: #1a2540; }
+      .est-stamp .fa { margin-right: 8px; }
+      .est-stamp .year { font-size: 16px; letter-spacing: 2px; margin-left: 6px; color: #fff; }
+      .legal-bar { background: #f6f7f9; border-top: 1px solid #e5e7eb; padding: 22px 0; font-size: 15px; line-height: 1.55; color: #3d4856; }
+      .legal-bar a { color: #3d4856; margin: 0 8px; text-decoration: underline; }
+      .legal-bar a:hover { color: #000; }
+      .legal-bar .sep { color: #c5cbd3; margin: 0 6px; }
+      a:focus, button:focus, [tabindex]:focus, input:focus, textarea:focus, select:focus { outline: 3px solid #1f4fd8 !important; outline-offset: 2px !important; border-radius: 2px; }
+      .founder-meta .fa, .founder-meta .ion { margin-right: 6px; color: #4a5563; }
+      .founder-meta li { list-style: none; padding: 4px 0; color: #2c3444; }
+      .founder-meta ul { padding-left: 0; }
+      #founder-bloc .founder-row { display: flex; flex-wrap: wrap; align-items: center; }
+      #founder-bloc .founder-photo { border-radius: 50%; max-width: 220px; margin: 0 auto 20px auto; box-shadow: 0 4px 14px rgba(0,0,0,0.12); }
+      #founder-bloc .founder-bio h3 { margin-bottom: 4px; color: #1a2540; }
+      #founder-bloc .founder-bio .role { color: #6b7683; font-size: 14px; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 16px; }
+      #founder-bloc .founder-bio .lead-bio { color: #2c3444; font-size: 17px; line-height: 1.65; margin-bottom: 18px; }
+      #founder-bloc .credentials { padding-left: 0; margin-bottom: 18px; }
+      #founder-bloc .credentials li { list-style: none; padding: 6px 0; color: #2c3444; font-size: 15px; }
+      #founder-bloc .credentials .fa { margin-right: 10px; color: #4a5563; width: 18px; text-align: center; }
+      #founder-bloc .founder-links a { display: inline-block; margin-right: 18px; color: #1f4fd8; text-decoration: none; font-weight: 600; }
+      #founder-bloc .founder-links a:hover { text-decoration: underline; }
+      #founder-bloc .founder-links .fa, #founder-bloc .founder-links .ion { margin-right: 6px; }
+      @media (max-width: 767px) { #founder-bloc .founder-row { display: block; text-align: center; } #founder-bloc .credentials li { text-align: left; } #founder-bloc .founder-links { text-align: center; } }
+      #advisors-bloc { border-top: 1px solid #eef0f3; }
+      #advisors-bloc h2 { color: #3d4856; }
+      #advisors-bloc .founder-meta img { max-width: 160px; margin: 0 auto; border-radius: 50%; }
+      #bloc-3 > .container > .row > .col-sm-12 > p.text-center { color: #4a5563; }
+      #bloc-6 p { color: #4a5563; }
+      .services-tag { color: #4a5563; font-size: 15px; letter-spacing: 0.3px; margin-top: 10px; margin-bottom: 4px; }
+      #cases-bloc { background: #f9fafb; border-top: 1px solid #eef0f3; }
+      #cases-bloc h2 { color: #3d4856; }
+      #cases-bloc .sub-heading { color: #4a5563; font-size: 16px; margin-bottom: 30px; }
+      .case-card { background: #fff; border: 1px solid #e5e7eb; border-radius: 6px; padding: 26px 24px; height: 100%; }
+      .case-card .case-header { display: flex; align-items: center; margin-bottom: 14px; min-height: 60px; }
+      .case-card .case-logo { max-height: 44px; max-width: 140px; margin-right: 16px; flex-shrink: 0; }
+      .case-card .case-title { color: #1a2540; font-size: 18px; margin: 0; }
+      .case-card .case-summary { color: #2c3444; font-size: 15px; line-height: 1.55; margin-bottom: 14px; }
+      .case-card .case-scope-label { color: #6b7683; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 6px; }
+      .case-card .case-scope { padding-left: 0; margin-bottom: 0; }
+      .case-card .case-scope li { list-style: none; color: #3d4856; font-size: 14px; padding: 3px 0; }
+      .case-card .case-scope .fa { color: #4a5563; margin-right: 8px; width: 14px; text-align: center; }
+      .case-col { margin-bottom: 24px; display: flex; }
+    </style>
+    <title>Aster Enterprises, LLC &mdash; Software for Mission-Driven Organizations</title>
 </head>
 <body>
 <script type="text/javascript">
@@ -24,12 +74,13 @@
 <!-- Main container -->
 <div class="page-container">
 
+<main id="main">
 <!-- Hero Bloc -->
 <div id="hero-bloc" class="bloc hero bgc-white tc-white bg-tracks d-bloc">
 	<div class="container bloc-sm hero-nav">
 		<nav class="navbar row">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="index.html"><img src="img/aster-logo_light.png" alt="logo" height="30" /></a>
+				<a class="navbar-brand" href="index.html"><img src="img/aster-logo_light.png" alt="Aster Enterprises home" height="30" /></a>
 			</div>
 			<div class="collapse navbar-collapse navbar-1">
 				<ul class="site-navigation nav navbar-nav pull-right">
@@ -42,7 +93,7 @@
 			<div class="col-sm-12">
 				<div class="row">
 					<div class="col-sm-12 col-md-6 col-md-offset-3">
-						<img src="img/aster-logo_light.png" class="img-responsive mg-lg center-block" />
+						<img src="img/aster-logo_light.png" alt="Aster Enterprises" class="img-responsive mg-lg center-block" />
 						<div class="row voffset-lg">
 							<div class="col-sm-12">
 								<div class="panel">
@@ -56,6 +107,12 @@
 											We create software that brings simplicity and convenience to your work.<br /><br />
 											From the offices of privately owned chains to departments in public universities, our technologies keep people on track and bring key insights to management.
 										</p>
+										<p class="services-tag text-center">
+											Custom software &middot; E&#8209;commerce development &middot; Digital accessibility &middot; Research&#8209;backed design
+										</p>
+										<p class="text-center">
+											<span class="est-stamp"><span class="fa fa-certificate"></span>Established<span class="year">2014</span></span>
+										</p>
 									</div>
 								</div>
 							</div>
@@ -63,7 +120,7 @@
 					</div>
 				</div>
 			</div>
-		</div><a id="scroll-hero" class="btn-dwn" href="#"><span class="fa fa-chevron-down"></span></a>
+		</div><a id="scroll-hero" class="btn-dwn" href="#bloc-2" aria-label="Scroll to our products"><span class="fa fa-chevron-down" aria-hidden="true"></span></a>
 	</div>
 </div>
 <!-- Hero Bloc END -->
@@ -86,7 +143,7 @@
 			<div class="col-sm-4">
 				<div class="text-center">
 					<a href="https://columnsapp.com">
-						<img src="https://columnsapp.com/img/columns_word_svg.svg" class="img-responsive center-block" />
+						<img src="https://columnsapp.com/img/columns_word_svg.svg" alt="" class="img-responsive center-block" />
 						<p class="text-center">
 							<strong><br />Columns</strong>
 					   </p>
@@ -96,7 +153,7 @@
 			<div class="col-sm-4">
 				<div class="text-center">
 					<a href="https://openkeynav.com">
-					<img src="/img/openKeyNav.png" class="img-responsive center-block" />
+					<img src="/img/openKeyNav.png" alt="" class="img-responsive center-block" />
 						<p class="text-center">
 							<strong><br />OpenKeyNav</strong>
 					   </p>
@@ -105,9 +162,8 @@
 			</div>
 			<div class="col-sm-4">
 				<div class="text-center">
-					<!-- <a href="https://lweru.com/projects/lobbyq/lobbyq-2.html"> -->
-					<a href="#">
-						<img src="https://lweru.com/projects/lobbyq/img/aq.png" class="img-responsive center-block" />
+					<a href="https://lweru.com/projects/lobbyq/lobbyq-2.html">
+						<img src="https://lweru.com/projects/lobbyq/img/aq.png" alt="" class="img-responsive center-block" />
 						<p class="text-center">
 							<strong><br />LobbyQ</strong>
 					   </p>
@@ -131,18 +187,59 @@
 					Thank you
 				</p>
 			</div>
-			<div class="col-xs-12 col-md-8 col-md-offset-2">
-				<div class="col-sm-3">
-					<img src="img/FSU_CCI.png" class="img-responsive center-block" />
+			<div class="col-xs-12 col-md-10 col-md-offset-1 client-grid">
+				<div class="row">
+					<div class="col-xs-6 col-sm-3 client-cell">
+						<img src="img/FSU_CCI.png" alt="FSU College of Communication &amp; Information" class="img-responsive center-block" />
+					</div>
+					<div class="col-xs-6 col-sm-3 client-cell">
+						<img src="img/clients/hms.svg" alt="Harvard Medical School" class="img-responsive center-block" />
+					</div>
+					<div class="col-xs-6 col-sm-3 client-cell">
+						<img src="img/JMI-Logo-for-business-card-transparent.png" alt="James Madison Institute" class="img-responsive center-block" />
+					</div>
+					<div class="col-xs-6 col-sm-3 client-cell">
+						<img src="img/domi_dark_s.png" alt="Domi Station" class="img-responsive center-block" />
+					</div>
 				</div>
-				<div class="col-sm-3">
-					<img src="img/Brazils-Logo-PNG.png" class="img-responsive center-block" />
+				<div class="row">
+					<div class="col-xs-6 col-sm-3 client-cell">
+						<img src="img/Brazils-Logo-PNG.png" alt="Brazils Waxing Center" class="img-responsive center-block" />
+					</div>
+					<div class="col-xs-6 col-sm-3 client-cell">
+						<img src="img/clients/petuniapicklebottom.png" alt="Petunia Pickle Bottom" class="img-responsive center-block" />
+					</div>
+					<div class="col-xs-6 col-sm-3 client-cell">
+						<img src="img/clients/mobywrap.png" alt="Moby Wrap" class="img-responsive center-block" />
+					</div>
+					<div class="col-xs-6 col-sm-3 client-cell">
+						<img src="img/clients/tropicisleliving.png" alt="Tropic Isle Living" class="img-responsive center-block" />
+					</div>
 				</div>
-				<div class="col-sm-3">
-					<img src="img/domi_dark_s.png" class="center-block" height="50" />
+				<div class="row">
+					<div class="col-xs-6 col-sm-3 client-cell">
+						<img src="img/clients/coreproducts.png" alt="Core Products" class="img-responsive center-block" />
+					</div>
+					<div class="col-xs-6 col-sm-3 client-cell">
+						<img src="img/clients/awe.png" alt="Awe Inspired" class="img-responsive center-block" />
+					</div>
+					<div class="col-xs-6 col-sm-3 client-cell">
+						<img src="img/clients/junoactive.png" alt="JunoActive" class="img-responsive center-block" />
+					</div>
+					<div class="col-xs-6 col-sm-3 client-cell">
+						<img src="img/clients/genivia.png" alt="Genivia, Inc." class="img-responsive center-block" />
+					</div>
 				</div>
-				<div class="col-sm-3">
-					<img src="img/JMI-Logo-for-business-card-transparent.png" class="img-responsive center-block" />
+				<div class="row">
+					<div class="col-xs-6 col-sm-3 client-cell">
+						<img src="img/clients/understory.png" alt="Understory Studio" class="img-responsive center-block" />
+					</div>
+					<div class="col-xs-6 col-sm-3 client-cell">
+						<img src="img/clients/porters.png" alt="Porters" class="img-responsive center-block" />
+					</div>
+					<div class="col-xs-6 col-sm-3 client-cell">
+						<img src="img/clients/herbaltea.png" alt="Herbal Tea House" class="img-responsive center-block" />
+					</div>
 				</div>
 			</div>
 		</div>
@@ -150,125 +247,192 @@
 </div>
 <!-- bloc-3 END -->
 
-<!-- bloc-4 -->
-<!-- <div class="bloc bgc-white bg-repeat" id="bloc-4">
+<!-- Selected Engagements -->
+<div class="bloc l-bloc" id="cases-bloc">
+	<div class="container bloc-lg">
+		<div class="row">
+			<div class="col-sm-12">
+				<h2 class="text-center mg-md">
+					Selected Engagements
+				</h2>
+				<p class="sub-heading text-center">
+					Representative work delivered through Aster Enterprises and its Lweru DBA.
+				</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4 case-col">
+				<div class="case-card">
+					<div class="case-header">
+						<img src="img/clients/hms.svg" alt="" class="case-logo" />
+						<h3 class="case-title">Harvard Medical School</h3>
+					</div>
+					<p class="case-summary">
+						Web design and development work for one of the world's leading academic medical institutions, delivered on the Drupal content management platform.
+					</p>
+					<p class="case-scope-label">Scope</p>
+					<ul class="case-scope">
+						<li><span class="fa fa-code" aria-hidden="true"></span>Web design &amp; development</li>
+						<li><span class="fa fa-cogs" aria-hidden="true"></span>Drupal CMS</li>
+						<li><span class="fa fa-university" aria-hidden="true"></span>Institutional engagement</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-sm-4 case-col">
+				<div class="case-card">
+					<div class="case-header">
+						<img src="img/clients/tropicisleliving.png" alt="" class="case-logo" />
+						<h3 class="case-title">Tropic Isle Living</h3>
+					</div>
+					<p class="case-summary">
+						National haircare brand best known for introducing Jamaican Black Castor Oil to the U.S. health and beauty market. Led an end-to-end Shopify engagement.
+					</p>
+					<p class="case-scope-label">Scope</p>
+					<ul class="case-scope">
+						<li><span class="fa fa-shopping-cart" aria-hidden="true"></span>Custom Shopify development</li>
+						<li><span class="fa fa-exchange" aria-hidden="true"></span>E&#8209;commerce platform migration</li>
+						<li><span class="fa fa-tasks" aria-hidden="true"></span>Project management</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-sm-4 case-col">
+				<div class="case-card">
+					<div class="case-header">
+						<img src="img/clients/thatsit.jpg" alt="" class="case-logo" />
+						<h3 class="case-title">That's It. Nutrition</h3>
+					</div>
+					<p class="case-summary">
+						Two&#8209;ingredient fruit bar brand with national retail distribution, including Costco. Delivered screen&#8209;reader&#8209;accessible navigation and digital accessibility remediation to widen the site's reach to shoppers using assistive technology.
+					</p>
+					<p class="case-scope-label">Scope</p>
+					<ul class="case-scope">
+						<li><span class="fa fa-universal-access" aria-hidden="true"></span>Screen&#8209;reader&#8209;accessible navigation</li>
+						<li><span class="fa fa-check-square-o" aria-hidden="true"></span>WCAG remediation</li>
+						<li><span class="fa fa-keyboard-o" aria-hidden="true"></span>Keyboard&#8209;first interaction review</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Selected Engagements END -->
+
+<!-- bloc-4a: Founder -->
+<div class="bloc bgc-white bg-repeat" id="founder-bloc">
 	<div class="container bloc-md">
 		<div class="row">
 			<div class="col-sm-12">
 				<h2 class="text-center mg-md tc-slate-gray">
-					Our People
+					Our Founder
+				</h2>
+			</div>
+		</div>
+		<div class="row voffset-lg founder-row">
+			<div class="col-sm-4 col-md-3 col-md-offset-1 text-center">
+				<img src="img/tedx_larry.jpg" class="img-responsive img-rd founder-photo" alt="Lawrence Weru" />
+			</div>
+			<div class="col-sm-8 col-md-7 founder-bio">
+				<h3 class="mg-sm">Lawrence Weru</h3>
+				<p class="role"><strong>Founder &amp; Principal</strong></p>
+				<p class="lead-bio">
+					Lawrence Weru founded Aster Enterprises in 2014 to build software that helps mission-driven organizations deliver care to more people, more effectively. His work spans technical consulting, product design, engineering, and accessibility, grounded in research on how digital systems serve (or fail to serve) the people who use them.
+				</p>
+				<ul class="credentials">
+					<li><span class="fa fa-graduation-cap" aria-hidden="true"></span>Master of Science, Harvard Medical School (Dean's Scholar, 2023)</li>
+					<li><span class="fa fa-graduation-cap" aria-hidden="true"></span>Bachelor of Arts &amp; Bachelor of Science, Florida State University</li>
+					<li><span class="fa fa-microphone" aria-hidden="true"></span>TEDx speaker on design, civic data, and perception (2015)</li>
+					<li><span class="fa fa-newspaper-o" aria-hidden="true"></span>Featured in Forbes, Harvard Gazette, Harvard Medicine News, Vox, Fast Company, Slate</li>
+					<li><span class="fa fa-code" aria-hidden="true"></span>Creator of OpenKeyNav, an open-source keyboard-navigation library</li>
+				</ul>
+				<div class="founder-links">
+					<a href="https://www.lweru.com" target="_blank" rel="noopener"><span class="ion ion-person" aria-hidden="true"></span> lweru.com</a>
+					<a href="https://www.linkedin.com/in/lweru" target="_blank" rel="noopener"><span class="fa fa-linkedin-square" aria-hidden="true"></span> LinkedIn</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-4a END -->
+
+<!-- bloc-4b: Advisors & Associates
+     NOTE: This block is independent of the Founder block above.
+     To hide it (e.g. when the advisory board is in transition),
+     wrap this section in a comment or add the `hidden` attribute to the root div. 
+	 
+<div class="bloc bgc-white bg-repeat" id="advisors-bloc">
+	<div class="container bloc-md">
+		<div class="row">
+			<div class="col-sm-12">
+				<h2 class="text-center mg-md tc-slate-gray">
+					Advisors &amp; Associates
 				</h2>
 				<p class="sub-heading text-center">
-					Aster Enterprises is a tech company that is based out of Tallahassee Florida.
+					Our advisors bring expertise across engineering, design, life sciences, and strategic operations.
 				</p>
 			</div>
 		</div>
 		<div class="row voffset-lg">
-			<div class="col-sm-3">
-				<img src="img/tedx_larry.jpg" class="img-responsive img-rd" />
-				<h3 class="text-center mg-md">
-					Larry Weru
-				</h3>
-				<p class="text-center">
-					Artist. Programmer. Consultant.<br /><strong>Founder</strong>
-				</p>
-				<div class="text-center">
-					<a href="http://www.lweru.com"><span class="ion ion-person icon-md"></span></a>
-				</div>
-			</div>
-			<div class="col-sm-3">
-				<img src="img/julia.jpg" class="img-responsive img-rd" />
+			<div class="col-sm-4 founder-meta">
+				<img src="img/julia.jpg" class="img-responsive img-rd" alt="Julia Holly" />
 				<h3 class="text-center mg-md">
 					Julia Holly
 				</h3>
 				<p class="text-center">
-					Owner | Design Strategist at JH Creative.<br /><strong>Business Associate</strong>
+					Owner &amp; Design Strategist, JH Creative.<br /><strong>Business Associate</strong>
 				</p>
 				<div class="text-center">
-					<a href="https://www.linkedin.com/profile/view?id=AAkAAAn32e8B1CNSTt6oyjdZpCtAacHmATx078c" target="_blank"><span class="fa fa-linkedin-square icon-md"></span></a>
+					<a href="https://www.linkedin.com/profile/view?id=AAkAAAn32e8B1CNSTt6oyjdZpCtAacHmATx078c" target="_blank" rel="noopener" aria-label="LinkedIn &mdash; Julia Holly"><span class="fa fa-linkedin-square icon-md" aria-hidden="true"></span></a>
 				</div>
 			</div>
-			<div class="col-sm-3">
-				<img src="img/geo.jpg" class="img-responsive img-rd" />
+			<div class="col-sm-4 founder-meta">
+				<img src="img/robert.jpg" class="img-responsive img-rd" alt="Robert van Engelen, PhD" />
 				<h3 class="text-center mg-md">
-					Geo Miller
+					Robert van Engelen, PhD
 				</h3>
 				<p class="text-center">
-					Software Consultant, Instructor, Researcher. Founder at Codeslam.<br /><strong>Technical Advisor</strong>
+					Professor of Computer Science, FSU.<br />Founder, Genivia Inc.<br /><strong>Technical Advisor</strong>
 				</p>
 				<div class="text-center">
-					<a href="https://www.linkedin.com/profile/view?id=AAkAAAMEtYgBl1oHjIPqlt9YqmGZhwEZDeoi_5c" target="_blank"><span class="fa fa-linkedin-square icon-md"></span></a>
+					<a href="https://www.linkedin.com/profile/view?id=AAkAAAO4jf0BUIEpivRVoQpqnoDEPugh7abnRFU" target="_blank" rel="noopener" aria-label="LinkedIn &mdash; Robert van Engelen"><span class="fa fa-linkedin-square icon-md" aria-hidden="true"></span></a>
 				</div>
 			</div>
-			<div class="col-sm-3">
-				<img src="img/robert.jpg" class="img-responsive img-rd" />
+			<div class="col-sm-4 founder-meta">
+				<img src="img/susanne.jpg" class="img-responsive img-rd" alt="Susanne Cappendijk-van Engelen, MBA, PhD" />
 				<h3 class="text-center mg-md">
-					Robert van Engelen PhD
+					Susanne Cappendijk&ndash;van&nbsp;Engelen, MBA, PhD
 				</h3>
 				<p class="text-center">
-					Professor of Computer Science &amp; Founder Genivia Inc.<br /><strong>Technical Advisor</strong>
+					Neuroscientist &middot; R&amp;D Management &middot; Strategic Financial Leader.<br /><strong>Business Advisor &amp; Mentor</strong>
 				</p>
 				<div class="text-center">
-					<a href="https://www.linkedin.com/profile/view?id=AAkAAAO4jf0BUIEpivRVoQpqnoDEPugh7abnRFU" target="_blank"><span class="fa fa-linkedin-square icon-md"></span></a>
+					<a href="https://www.linkedin.com/profile/view?id=AAkAAAQXuo4B9v6nBn3A7QiRdsFHboKcpM2q_KM" target="_blank" rel="noopener" aria-label="LinkedIn &mdash; Susanne Cappendijk-van Engelen"><span class="fa fa-linkedin-square icon-md" aria-hidden="true"></span></a>
 				</div>
-			</div>
-		</div>
-		<div class="row voffset-lg voffset">
-			<div class="col-sm-3">
-				<img src="img/susanne.jpg" class="img-responsive img-rd" />
-				<h3 class="text-center mg-md">
-					Susanne Cappendijk - van Engelen MBA, PhD
-				</h3>
-				<p class="text-center">
-					Neuroscientist | Subject Matter Expert Pharmacology | R&amp;D Management | Key Account Manager | Strategic Financial Leader<br /><strong>Business Advisor &amp; Mentor</strong>
-				</p>
-				<div class="text-center">
-					<a href="https://www.linkedin.com/profile/view?id=AAkAAAQXuo4B9v6nBn3A7QiRdsFHboKcpM2q_KM" target="_blank"><span class="fa fa-linkedin-square icon-md"></span></a>
-				</div>
-			</div>
-			<div class="col-sm-3">
-				<h1 class="mg-clear">
-				</h1>
-			</div>
-			<div class="col-sm-3">
-				<h1 class="mg-clear">
-				</h1>
-			</div>
-			<div class="col-sm-3">
-				<h1 class="mg-clear">
-				</h1>
 			</div>
 		</div>
 	</div>
-</div> -->
-<!-- bloc-4 END -->
+</div>
+<!-- bloc-4b END -->
+</main>
 
+<footer role="contentinfo">
 <!-- Footer - bloc-5 -->
 <div class="bloc bgc-white b-divider bg-squared-bg l-bloc bg-repeat" id="bloc-5">
 	<div class="container bloc-lg">
 		<div class="row">
-			<!-- <div class="col-sm-4">
+			<div class="col-sm-4 col-sm-offset-2">
 				<div class="text-center">
 					<span class="ion ion-ios-location icon-xl icon-slate-gray"></span>
 				</div>
 				<p class="text-center">
-					 <strong><br />301 Gawain Ln. Tallahassee, FL. 32301.</strong>
+					<strong><br />7116 Prestwick Circle S.<br />Jacksonville, FL 32244</strong>
 				</p>
 			</div>
-			<div class="col-sm-4">
-				<div class="text-center">
-					<span class="ion ion-android-call icon-xl icon-slate-gray"></span>
-				</div>
-				<p class="text-center">
-					 <strong><br />(260) 632-7876</strong>
-				</p>
-			</div> -->
 			<div class="col-sm-4">
 				<div class="text-center">
 					<span class="ion ion-email icon icon-mail icon-xl icon-slate-gray"></span>
 				</div>
 				<p class="text-center">
-					 <strong><br />hello@aster.enterprises</strong>
+					<strong><br /><a href="mailto:hello@aster.enterprises">hello@aster.enterprises</a></strong>
 				</p>
 			</div>
 		</div>
@@ -281,12 +445,33 @@
 	<div class="container bloc-lg">
 		<div class="row">
 			<p class="text-center">
-				with ♥ from Tallahassee and Cambridge.
+				with ♥ from Jacksonville, Tallahassee, and Cambridge.
 			</p>
 		</div>
 	</div>
 </div>
 <!-- Footer - bloc-6 END -->
+
+<!-- Legal bar -->
+<div class="legal-bar">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-7 text-left">
+				&copy; 2014&ndash;2026 Aster Enterprises, LLC. A Florida limited liability company. All rights reserved.
+				Lweru<sup>&reg;</sup> is a DBA of Aster Enterprises, LLC.
+			</div>
+			<div class="col-sm-5 text-right">
+				<a href="privacy.html">Privacy Policy</a>
+				<span class="sep">&middot;</span>
+				<a href="terms.html">Terms of Service</a>
+				<span class="sep">&middot;</span>
+				<a href="accessibility.html">Accessibility Statement</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Legal bar END -->
+</footer>
 </div>
 <!-- Main container END -->
 

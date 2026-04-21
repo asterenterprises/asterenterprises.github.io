@@ -1,0 +1,41 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 *)",
+      "mcp__Claude_Preview__preview_start",
+      "mcp__Claude_in_Chrome__tabs_context_mcp",
+      "Bash(cp /Users/larry/Documents/development/LDubya/LDubya.github.io/projects/petuniapicklebottom/img/logo.png /Users/larry/Documents/development/asterenterprises.github.io/img/clients/petuniapicklebottom.png)",
+      "Bash(cp /Users/larry/Documents/development/LDubya/LDubya.github.io/projects/mobywrap/img/logo.png /Users/larry/Documents/development/asterenterprises.github.io/img/clients/mobywrap.png)",
+      "Bash(cp /Users/larry/Documents/development/LDubya/LDubya.github.io/projects/tropicisleliving/img/til_logo.png /Users/larry/Documents/development/asterenterprises.github.io/img/clients/tropicisleliving.png)",
+      "Bash(cp /Users/larry/Documents/development/LDubya/LDubya.github.io/projects/coreproducts/img/logo.png /Users/larry/Documents/development/asterenterprises.github.io/img/clients/coreproducts.png)",
+      "Bash(cp /Users/larry/Documents/development/LDubya/LDubya.github.io/projects/awe/img/logo.png /Users/larry/Documents/development/asterenterprises.github.io/img/clients/awe.png)",
+      "Bash(mkdir -p /tmp/logos)",
+      "Read(//tmp/**)",
+      "Bash(curl -sL -o porters.html https://porters.io/)",
+      "Bash(curl -sL -o storetasker.html https://storetasker.com/)",
+      "Bash(curl -sL -o greengreen.html https://greengreenscrub.com/)",
+      "Bash(curl -sL -o chaircover.html https://www.chaircoverfactory.com/)",
+      "Bash(curl -sL -A \"Mozilla/5.0\" -o storetasker2.html https://storetasker.com/)",
+      "Bash(curl -sL -A \"Mozilla/5.0\" https://storetasker.com/meta-home.png -o storetasker-meta.png)",
+      "Bash(curl -sL -A \"Mozilla/5.0\" https://storetasker.com/favicon.ico -o storetasker-fav.ico)",
+      "Bash(file storetasker-*)",
+      "Bash(curl -sL -A \"Mozilla/5.0\" -o nau.html https://nau.edu/)",
+      "Bash(curl -sL -A \"Mozilla/5.0\" -o usf.html https://www.usf.edu/)",
+      "Bash(curl -sL -o /Users/larry/Documents/development/asterenterprises.github.io/img/clients/porters.png https://cdn.prod.website-files.com/66ccac99a3be886b6bf832d3/66ccac99a3be886b6bf83354_porters%20logo%203x.png)",
+      "Bash(curl -sL -o /Users/larry/Documents/development/asterenterprises.github.io/img/clients/herbaltea.png https://cdn11.bigcommerce.com/s-rk7j8/images/stencil/500w/herbal-tea-house-logo-2024_1712086856__30676.original.png)",
+      "Bash(curl -sL -A \"Mozilla/5.0\" -o nau2.html https://nau.edu/)",
+      "Bash(curl -sL -A \"Mozilla/5.0\" -o usf2.html \"https://www.usf.edu\")",
+      "Bash(curl -sL -A \"Mozilla/5.0\" -o bbmcc.html \"https://www.bigbendminoritychamber.com\")",
+      "Bash(curl -sL -A \"Mozilla/5.0 \\(Macintosh; Intel Mac OS X 10_15_7\\) AppleWebKit/537.36\" -o nau3.html \"https://nau.edu/\")",
+      "Bash(curl -sL -A \"Mozilla/5.0\" -o usf3.html \"https://www.usf.edu/\")",
+      "Bash(curl -s \"http://localhost:8000/index.html?v=$\\(date +%s\\)\")",
+      "Read(//private/tmp/**)",
+      "Bash(curl -sL -A \"Mozilla/5.0\" -o thatsit.html \"https://thatsitfruit.com/\")",
+      "Bash(curl -sL \"https://www.thatsitfruit.com/cdn/shop/files/Black-Block-TIN_LOGO_outlinred-4_600x.jpg\" -o /Users/larry/Documents/development/asterenterprises.github.io/img/clients/thatsit.jpg)",
+      "Bash(curl -sL \"https://www.thatsitfruit.com/cdn/shop/files/Black-Block-TIN_LOGO_outlinred-4_600x600.jpg\" -o /Users/larry/Documents/development/asterenterprises.github.io/img/clients/thatsit.jpg)",
+      "Bash(curl -sL \"https://www.thatsitfruit.com/cdn/shop/files/Black-Block-TIN_LOGO_outlinred-4.jpg\" -o /Users/larry/Documents/development/asterenterprises.github.io/img/clients/thatsit.jpg)",
+      "Bash(curl -sL \"https://www.thatsitfruit.com/cdn/shop/files/Logo_320x320_792ec94f-a065-420f-a152-d664429c2820_300x300.jpg\" -o /tmp/ti1.jpg)",
+      "Bash(curl -sL \"https://cdn.shopify.com/s/files/1/0057/6404/2307/files/Logo_320x320_792ec94f-a065-420f-a152-d664429c2820.jpg\" -o /tmp/ti2.jpg)"
+    ]
+  }
+}
