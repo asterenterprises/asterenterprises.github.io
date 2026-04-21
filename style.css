@@ -195,11 +195,11 @@ a:hover{text-decoration: none; cursor:pointer;}
 }
 #bloc-2 h3{
 	font-family: Lato;
-	font-weight: 300;
+	/* font-weight: 300; */
 }
 #bloc-2 h2{
 	font-family: Lato;
-	font-weight: 300;
+	/* font-weight: 300; */
 }
 
 /* = NavBar
